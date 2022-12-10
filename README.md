@@ -1,127 +1,37 @@
-# Python-Games
+# Piano Tiles
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
-This repository contains a collection of small python games made by me using turtle, tkinter
-and pygame library.
+Piano Tiles is a piano tiles musical game implementaion in python and pygame.
 
-## All the Games are listed here
+<p align='center'>
+	<img src='app.png' width=200 height=300>
+</p>
 
-* ### [Aeroblasters](https://github.com/pyGuru123/Python-Games/tree/master/Aeroblasters)
-	> Aeroblasters is a 2d plane shooter arcade game.
+## How to Download
 
-* ### [Angry Walls](https://github.com/pyGuru123/Python-Games/tree/master/Angry%20Walls)
-	> A simple hypercasual game made on pydroid3.
+Download this project from here [Download Piano Tiles](https://downgit.github.io/#/home?url=https://github.com/pyGuru123/Python-Games/tree/master/Piano%20Tiles)
 
-* ### [Arc Dash](https://github.com/pyGuru123/Python-Games/tree/master/Arc%20Dash)
-	> Arc Dash is a simple endless target based hypercasual arcade game.
+## Requirements
 
-* ### [Asteroids](https://github.com/pyGuru123/Python-Games/tree/master/Asteroids)
-	> Asteroids is an implementaion of Asteroids game in pygame.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following packages :-
+* Pygame
 
-* ### [Bounce](https://github.com/pyGuru123/Python-Games/tree/master/Bounce)
-	> Bounce is an clone of the original Nokia's Bounce game
+```bash
+pip install pygame
+```
 
-* ### [Car Dodge 2D](https://github.com/pyGuru123/Python-Games/tree/master/Car%20Dodge%202d)
-	> A car dodge game made on pydroid3.
+## Usage
 
-* ### [Cave Story](https://github.com/pyGuru123/Python-Games/tree/master/Cave%20Story)
-	> A cave adventure based 2d platformer game made on pydroid3.
+Double click the game.py to open the game, Click start to start playing the game. The objective of the game is to click the tiles to without clicking anywhere else inthe game screen to generate musical notes. Also if a block reaches ground without getting clicked, game will get over.
 
-* ### [Connected](https://github.com/pyGuru123/Python-Games/tree/master/Connected)
-	> Connected is a simple endless hypercasual game.
+Controls:
+* Use Mousemotion to move & Left Mouse key to click tiles. 
 
-* ### [Dino](https://github.com/pyGuru123/Python-Games/tree/master/Dino)
-	> Dino is an implementaion of chrome dino game but with cheatcodes.
+## Contributing
 
-* ### [Dodgy Walls](https://github.com/pyGuru123/Python-Games/tree/master/Dodgy%20Walls)
-	> Dodgy walls is a simple endless hypercasual arcade game.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* ### [Dots & Boxes](https://github.com/pyGuru123/Python-Games/tree/master/Dots%20%26%20Boxes)
-	> Dots & Boxes is a simple dots and boxes game clone made with pygame.
-
-* ### [Egg Catching Game](https://github.com/pyGuru123/Python-Games/tree/master/Egg%20Catching%20Game)
-	> Collect Eggs, score points. A simple game for pydroid3.
-
-* ### [Flappy Bird](https://github.com/pyGuru123/Python-Games/tree/master/Flappy%20Bird)
-	> An implementation of flappy bird on pydroid3.
-
-* ### [GhostBusters](https://github.com/pyGuru123/Python-Games/tree/master/GhostBusters)
-	> GhostBusters is a scrollable platformer game with parallax.
-
-* ### [HyperTile Dash](https://github.com/pyGuru123/Python-Games/tree/master/HyperTile%20Dash)
-	> HyperTile Dash is a simple target based endless hypercasual arcade game.
-
-* ### [Jungle Dash](https://github.com/pyGuru123/Python-Games/tree/master/Jungle%20Dash)
-	> Jungle Dash is a 2D platformer game made with pygame.
-
-* ### [Memory Puzzle](https://github.com/pyGuru123/Python-Games/tree/master/Memory%20Puzzle)
-	> Memory Puzzle is a simple puzzle game based on fruits made with pygame.
-
-* ### [MineSweeper](https://github.com/pyGuru123/Python-Games/tree/master/MineSweeper)
-	> MineSweeper game written using tkinter library.
-
-* ### [Piano Tiles](https://github.com/pyGuru123/Python-Games/tree/master/Piano%20Tiles)
-	> Piano Tiles musical game written using pygame library.
-
-* ### [Picture Sliding Puzzle](https://github.com/pyGuru123/Python-Games/tree/master/Picture%20Sliding%20Puzzle)
-	> Picture Sliding Puzzle is an implementation of 15 puzzle in tkinter library.
-
-* ### [Pong](https://github.com/pyGuru123/Python-Games/tree/master/Pong)
-	> Pong game written using turtle module.
-
-* ### [Qircle Rush](https://github.com/pyGuru123/Python-Games/tree/master/Qircle%20Rush)
-	> Qircle Rush is a simple hypercasual game written using pygame library.
-
-* ### [Rock Paper Scissor](https://github.com/pyGuru123/Python-Games/tree/master/Rock%20Paper%20Scissor)
-	> Rock Paper Scissor game written using tkinter library.
-
-* ### [Rotate Dash](https://github.com/pyGuru123/Python-Games/tree/master/Rotate%20Dash)
-	> Rotate Dash is a simple hypercasual game written using pygame library.
-
-* ### [Tetris](https://github.com/pyGuru123/Python-Games/tree/master/Tetris)
-	> Tetris is a tetris clone made using python and pygame.
-
-* ### [Tic Tac Toe](https://github.com/pyGuru123/Python-Games/tree/master/Tic%20Tac%20Toe)
-	> Tic Tac Toe game written using tkinter library.
-
-***
-
-## Games made on / for pyrdoid3
-
-These games are specifically made and optimised for pydroid3 
-
-* [Aeroblasters](https://github.com/pyGuru123/Python-Games/tree/master/Aeroblasters)
-* [Angry Walls](https://github.com/pyGuru123/Python-Games/tree/master/Angry%20Walls)
-* [Arc Dash](https://github.com/pyGuru123/Python-Games/tree/master/Arc%20Dash)
-* [Cave Story](https://github.com/pyGuru123/Python-Games/tree/master/Cave%20Story)
-* [Connected](https://github.com/pyGuru123/Python-Games/tree/master/Connected)
-* [Dodgy Walls](https://github.com/pyGuru123/Python-Games/tree/master/Dodgy%20Walls)
-* [Egg Catching Game](https://github.com/pyGuru123/Python-Games/tree/master/Egg%20Catching%20Game)
-* [HyperTile Dash](https://github.com/pyGuru123/Python-Games/tree/master/HyperTile%20Dash)
-* [Flappy Bird](https://github.com/pyGuru123/Python-Games/tree/master/Flappy%20Bird)
-* [Qircle Rush](https://github.com/pyGuru123/Python-Games/tree/master/Qircle%20Rush)
-* [Rotate Dash](https://github.com/pyGuru123/Python-Games/tree/master/Rotate%20Dash)
-
-***
-
-## Tools & Utilities
-
-* ### SpriteSheet Cutter
-	> SpriteSheet Cutter is a tool to cut spritsheets.\
-	> Link to project : [SpriteSheet Cutter](https://github.com/pyGuru123/Python-Games/tree/master/SpriteSheet%20Cutter)
-
-* ### Level Designer
-	> Level Designer is a tool to design levels for 2D non scrollable platformer games.\
-	> Link to project : [Level Designer](https://github.com/pyGuru123/Python-Games/tree/master/Level%20Designer)
-
-***
-## Game Resources
-
-To get a complete list of free and awesome 2D game resources including Spritesheets, Sounds, Textures, HUDs, Menus and other game assets [click here](https://github.com/pyGuru123/gitMemory/blob/main/game%20resources.md)
-
-
-<br/>
-<h3 align="center"> Show ❤️ By Starring this <img align='center'  height="22" src="https://img.shields.io/badge/Repo!%F0%9F%98%8A-purple.svg?&style=for-the-badge&logoColor=green" /></h3>
+Please make sure to update tests as appropriate.
