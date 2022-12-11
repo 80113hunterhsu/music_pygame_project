@@ -6,6 +6,7 @@
 import json
 import random
 import pygame
+import math
 from threading import Thread
 
 from objects import Tile, Square, Text, Button, Counter
@@ -53,10 +54,10 @@ overlay = pygame.transform.scale(overlay, (WIDTH, HEIGHT))
 
 # MUSIC **********************************************************************
 
-buzzer_fx = pygame.mixer.Sound('Sounds/piano-buzzer.mp3')
+buzzer_fx = pygame.mixer.Sound('Sounds/dead.mp3')
 
 pygame.mixer.music.load('Sounds/piano-bgmusic.mp3')
-pygame.mixer.music.set_volume(0.8)
+pygame.mixer.music.set_volume(0.0)
 pygame.mixer.music.play(loops=-1)
 
 # FONTS **********************************************************************
@@ -92,7 +93,8 @@ def get_speed(score):
 	return 200 + 5 * score
 
 def play_notes(notePath):
-	pygame.mixer.Sound(notePath).play()
+	length = pygame.mixer.Sound(notePath).get_length() * 0.085 * 1000
+	pygame.mixer.Sound(notePath).play(maxtime=math.floor(length))
 
 # NOTES **********************************************************************
 
@@ -116,6 +118,8 @@ sound_on = True
 count = 0
 overlay_index = 0
 
+tile_key_base = (WIDTH / 4)
+
 running = True
 while running:
 	pos = None
@@ -137,8 +141,17 @@ while running:
 			if event.key == pygame.K_ESCAPE or \
 				event.key == pygame.K_q:
 				running = False
+			if event.key == pygame.K_d and not game_over:
+				pos = (tile_key_base - (tile_key_base / 2), HEIGHT - 120)
+			if event.key == pygame.K_f and not game_over:
+				pos = ((tile_key_base * 2) - (tile_key_base / 2), HEIGHT - 120)
+			if event.key == pygame.K_j and not game_over:
+				pos = ((tile_key_base * 3) - (tile_key_base / 2), HEIGHT - 120)
+			if event.key == pygame.K_k and not game_over:
+				pos = ((tile_key_base * 4) - (tile_key_base / 2), HEIGHT - 120)
 
 		if event.type == pygame.MOUSEBUTTONDOWN and not game_over:
+			print(event.pos)
 			pos = event.pos
 
 	if home_page:
@@ -156,12 +169,13 @@ while running:
 
 			pos = None
 
-			notes_list = notes_dict['2']
+			notes_list = notes_dict['1']
 			note_count = 0
 			pygame.mixer.set_num_channels(len(notes_list))
 
 	if game_page:
 		time_counter.update()
+		pygame.draw.line(win, (255, 0, 0), (0, HEIGHT-120), (WIDTH, HEIGHT-120))
 		if time_counter.count <= 0:
 			for tile in tile_group:
 				tile.update(speed)
@@ -176,7 +190,7 @@ while running:
 							
 
 							note = notes_list[note_count].strip()
-							th = Thread(target=play_notes, args=(f'Sounds/{note}.ogg', ))
+							th = Thread(target=play_notes, args=(f'Audio/{note}.wav', ))
 							th.start()
 							th.join()
 							note_count = (note_count + 1) % len(notes_list)
@@ -231,7 +245,7 @@ while running:
 
 					if replay_btn.draw(win):
 						index = random.randint(1, len(notes_dict))
-						notes_list = notes_dict[str(index)]
+						notes_list = notes_dict['1']
 						note_count = 0
 						pygame.mixer.set_num_channels(len(notes_list))
 
