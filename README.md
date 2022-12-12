@@ -8,5 +8,6 @@
  - version_2: Plays the randomized version of 'We Don't Talk Anymore'.
 
 ## run
-1. choose which version to play and enter the directory
-2. type in command line prompt: <code>python main.py</code>
+1. clone this repository
+2. choose which version to play and enter the directory
+3. type in command line prompt: <code>python main.py</code>
