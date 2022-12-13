@@ -170,6 +170,7 @@ while running:
 			pos = None
 
 			notes_list = notes_dict['1']
+			random.shuffle(notes_list)
 			note_count = 0
 			pygame.mixer.set_num_channels(len(notes_list))
 
