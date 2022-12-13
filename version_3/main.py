@@ -247,6 +247,7 @@ while running:
 					if replay_btn.draw(win):
 						index = random.randint(1, len(notes_dict))
 						notes_list = notes_dict['1']
+						random.shuffle(notes_list)
 						note_count = 0
 						pygame.mixer.set_num_channels(len(notes_list))
 
