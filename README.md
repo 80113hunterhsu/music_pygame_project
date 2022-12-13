@@ -6,6 +6,7 @@
 ## versions
  - version_1: Plays the original song of 'We Don't Talk Anymore'.
  - version_2: Plays the randomized version of 'We Don't Talk Anymore'.
+ - version_2: Plays the randomized version of 'We Don't Talk Anymore', but it's randomized every round you play.
 
 ## run
 1. clone this repository
