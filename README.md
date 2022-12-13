@@ -1,4 +1,5 @@
-# Piano Tiles project
+# music_pygame_project
+> Final project for --Fundamental Programming for Digital Music and Sound Synthesis--
 
 ## dependencies
  - pygame
